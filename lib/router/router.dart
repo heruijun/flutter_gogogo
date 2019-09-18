@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gogogo/page/appbarpage/appbar_page.dart';
 import 'package:flutter_gogogo/page/calendarpage/calendar_page.dart';
+import 'package:flutter_gogogo/page/listviewpage/listview_page.dart';
 import 'package:flutter_gogogo/page/loadingpage/loading_page.dart';
 import 'package:flutter_gogogo/page/sunflowerdemo/sunflower_page.dart';
 import 'package:flutter_gogogo/page/testpage/test_page.dart';
@@ -11,6 +12,7 @@ class Router {
   static const calendarPage = 'app://calendarpage';
   static const appbarPage = 'app://appbarpage';
   static const sunflowerPage = 'app://sunflowerpage';
+  static const listviewPage = 'app://listviewpage';
 
   Widget _getPage(String url, dynamic params) {
     switch (url) {
@@ -32,6 +34,10 @@ class Router {
         );
       case sunflowerPage:
         return SunflowerPage(title: "sunflower");
+      case listviewPage:
+        return ListviewPage(
+          title: "列表",
+        );
     }
   }
 

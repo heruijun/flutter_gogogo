@@ -16,6 +16,7 @@ class _WidgetPageState extends State<WidgetPage> {
       _widgetItem(Colors.blue, '日期组件', Router.calendarPage),
       _widgetItem(Colors.brown, '渐变色\nAppBar', Router.appbarPage),
       _widgetItem(Colors.red, 'Flutter\nsunflower', Router.sunflowerPage),
+      _widgetItem(Colors.brown, '列表', Router.listviewPage),
     ];
 
     return new Scaffold(
